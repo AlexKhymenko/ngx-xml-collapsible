@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lib": "ng build ngx-xml-collapsible",
+    "pub": "npm run lib && cd dist/ngx-xml-collapsible && npm publish"
+
   },
   "private": true,
   "dependencies": {
