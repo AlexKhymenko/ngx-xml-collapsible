@@ -20,9 +20,12 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "ngx-collapse-animated": "^0.0.8",
     "prettier": "^3.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "xml2js": "^0.6.2",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {

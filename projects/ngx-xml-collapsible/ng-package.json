@@ -3,5 +3,10 @@
   "dest": "../../dist/ngx-xml-collapsible",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "ngx-collapse-animated",
+    "xml2js",
+    "@fortawesome/fontawesome-free"
+  ]
 }
