@@ -1,6 +1,6 @@
 # NgxXmlCollapsible
 
-Ngx xml collapsible 
+Ngx xml collapsible
 
 Try it https://stackblitz.com/~/github.com/AlexKhymenko/ngx-xml-collapsible
 
@@ -15,6 +15,14 @@ bootstrapApplication(AppComponent, {
                                   provideZoneChangeDetection({ eventCoalescing: true }),
                                   provideRouter(routes)]
 }).catch((err) => console.error(err));
+`````
+
+- Add fortawesome in your styles for icons
+`````
+ "styles": [
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+            ],
 `````
 
 ## Usage

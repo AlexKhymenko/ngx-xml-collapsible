@@ -17,6 +17,14 @@ bootstrapApplication(AppComponent, {
 }).catch((err) => console.error(err));
 `````
 
+- Add fortawesome in your styles for icons
+`````
+ "styles": [
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+            ],
+`````
+
 ## Usage
 Add ngxCollapseAnimated directive to where the content should be visible
 `````
