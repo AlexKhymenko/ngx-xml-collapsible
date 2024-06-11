@@ -21,16 +21,16 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
-    "ngx-xml-collapsible": "^0.0.5",
+    "ngx-xml-collapsible": "^0.0.6",
     "prettier": "3.3.2",
     "rxjs": "~7.8.0",
     "tslib": "2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "18.0.3",
-    "@angular/cli": "18.0.3",
-    "@angular/compiler-cli": "18.0.0",
+    "@angular-devkit/build-angular": "^18.0.3",
+    "@angular/cli": "^18.0.3",
+    "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
@@ -38,7 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ng-packagr": "18.0.0",
+    "ng-packagr": "^18.0.0",
     "typescript": "~5.4.2"
   }
 }
