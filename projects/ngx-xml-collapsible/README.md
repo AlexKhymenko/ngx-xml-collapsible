@@ -1,24 +1,38 @@
 # NgxXmlCollapsible
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+Ngx xml collapsible 
 
-## Code scaffolding
+Try it https://stackblitz.com/~/github.com/AlexKhymenko/ngx-xml-collapsible
 
-Run `ng generate component component-name --project ngx-xml-collapsible` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-xml-collapsible`.
-> Note: Don't forget to add `--project ngx-xml-collapsible` or else it will be added to the default project in your `angular.json` file. 
+## Installation
 
-## Build
+- Simply run `npm i ngx-xml-collapsible`.
+- Add animation `provideAnimations` provider to your project
 
-Run `ng build ngx-xml-collapsible` to build the project. The build artifacts will be stored in the `dist/` directory.
+`````
+bootstrapApplication(AppComponent, {
+                      providers: [provideAnimations(),
+                                  provideZoneChangeDetection({ eventCoalescing: true }),
+                                  provideRouter(routes)]
+}).catch((err) => console.error(err));
+`````
 
-## Publishing
+## Usage
+Add ngxCollapseAnimated directive to where the content should be visible
+`````
+    <ngx-xml-collapsible [xmlData]="xmlData"/>
+`````
 
-After building your library with `ng build ngx-xml-collapsible`, go to the dist folder `cd dist/ngx-xml-collapsible` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-xml-collapsible` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Import  NgxXmlCollapsibleComponent in Your component
+````` 
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, NgxXmlCollapsibleComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  xmlData =     '<?xml version="1.0"?> <PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20"> <Address Type="Shipping"> <Name>Ellen Adams</Name> <Street>123 Maple Street</Street> <City>Mill Valley</City> <State>CA</State> <Zip>10999</Zip> <Country>USA</Country> </Address> <Address Type="Billing"> <Name>Tai Yee</Name> <Street>8 Oak Avenue</Street> <City>Old Town</City> <State>PA</State> <Zip>95819</Zip> <Country>USA</Country> </Address> <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes> <Items> <Item PartNumber="872-AA"> <ProductName>Lawnmower</ProductName> <Quantity>1</Quantity> <USPrice>148.95</USPrice> <Comment>Confirm this is electric</Comment> </Item> <Item PartNumber="926-AA"> <ProductName>Baby Monitor</ProductName> <Quantity>2</Quantity> <USPrice>39.98</USPrice> <ShipDate>1999-05-21</ShipDate> </Item> </Items> </PurchaseOrder>';
+}
+`````
