@@ -1,0 +1,17 @@
+<app-xml-open-tag
+	(clicked)="clicked.emit()"
+	[key]="key()"
+	[selectedClass]="selectedClass()"
+	[isChevronDown]="isChevronDown()"
+	[isKeyValid]="isKeyValid()"
+/>
+<div [ngxCollapseAnimated]="isChevronDown()">
+	<ng-content />
+</div>
+
+<app-xml-close-tag
+	(clicked)="clicked.emit()"
+	[key]="key()"
+	[selectedClass]="selectedClass()"
+	[isKeyValid]="isKeyValid()"
+/>

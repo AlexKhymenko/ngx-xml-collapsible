@@ -1,0 +1,5 @@
+@if (isKeyValid()) {
+	<div class="xml-tag" [ngClass]="selectedClass()" (click)="clicked.emit()">
+		<span><</span><span>/</span>{{ key() }}>
+	</div>
+}

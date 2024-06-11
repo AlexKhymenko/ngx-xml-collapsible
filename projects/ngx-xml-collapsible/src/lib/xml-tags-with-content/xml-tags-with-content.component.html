@@ -1,0 +1,14 @@
+@for (item of xml() | keyvalue; track item) {
+	<app-xml-open-close-tag
+		(clicked)="hide(item.key)"
+		[key]="item.key"
+		[selectedClass]="classes()[internalId()]"
+		[isChevronDown]="isVisible(item.key)"
+	>
+		<app-xml-content
+			[itemKey]="item.key"
+			[itemValue]="item.value"
+			[internalId]="internalId()"
+		/>
+	</app-xml-open-close-tag>
+}

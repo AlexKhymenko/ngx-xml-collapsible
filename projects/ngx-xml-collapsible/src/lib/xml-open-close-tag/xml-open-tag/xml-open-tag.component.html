@@ -1,0 +1,6 @@
+<div class="xml-tag" [ngClass]="selectedClass()" (click)="clicked.emit()">
+	@if (isKeyValid()) {
+		<app-chevron-up-down [chevronUp]="isChevronDown()" />
+		<{{ key() }}>
+	}
+</div>

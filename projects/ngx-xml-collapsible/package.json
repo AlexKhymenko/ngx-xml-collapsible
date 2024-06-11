@@ -4,17 +4,13 @@
   "peerDependencies": {
     "@angular/common": "^18.0.0",
     "@angular/core": "^18.0.0",
-    "ngx-collapse-animated": "0.0.7",
+    "ngx-collapse-animated": "0.0.8",
     "xml2js": "0.6.2",
     "@types/xml2js": "0.4.14",
     "@fortawesome/fontawesome-free": "6.5.2"
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "ngx-collapse-animated": "0.0.7",
-    "xml2js": "0.6.2",
-    "@types/xml2js": "0.4.14",
-    "@fortawesome/fontawesome-free": "6.5.2"
+    "tslib": "^2.3.0"
   },
   "repository": {
     "type": "git",

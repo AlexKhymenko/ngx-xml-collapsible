@@ -1,0 +1,15 @@
+@if (isObject(itemValue())) {
+	<div class="xml-content">
+		@if (isKeyValid()) {
+			<app-xml-tags-with-content
+				[id]="internalId()"
+				[itemKey]="itemKey()"
+				[xml]="itemValue()"
+			/>
+		}
+	</div>
+} @else {
+	<div class="xml-text">
+		{{ itemValue() }}
+	</div>
+}
