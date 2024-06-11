@@ -97,6 +97,39 @@
           }
         }
       }
+    },
+    "ngx-xml-collapsible": {
+      "projectType": "library",
+      "root": "projects/ngx-xml-collapsible",
+      "sourceRoot": "projects/ngx-xml-collapsible/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-xml-collapsible/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-xml-collapsible/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-xml-collapsible/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-xml-collapsible/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
